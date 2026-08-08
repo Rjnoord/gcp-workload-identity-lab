@@ -81,3 +81,10 @@ Confirm the `google_service_account_iam_member` binding's `principalSet` repo se
 cd terraform
 terraform destroy
 ```
+<img width="1470" height="956" alt="Screenshot 2026-08-08 at 4 10 46 PM" src="https://github.com/user-attachments/assets/c4f54b5d-51bf-4148-997b-544fbb9738a4" />
+<img width="1470" height="956" alt="Screenshot 2026-08-08 at 4 10 58 PM" src="https://github.com/user-attachments/assets/c003f8cb-4ff5-486a-ac5f-615e7151cc2d" />
+<img width="1470" height="956" alt="Screenshot 2026-08-08 at 4 13 02 PM" src="https://github.com/user-attachments/assets/824b5643-4314-42c7-9625-1fa5652e25b2" />
+<img width="1470" height="956" alt="Screenshot 2026-08-04 at 8 42 40 PM" src="https://github.com/user-attachments/assets/9906d1c1-9c80-461a-bf20-f83adf3cfefb" />
+<img width="1470" height="956" alt="Screenshot 2026-08-08 at 4 11 54 PM" src="https://github.com/user-attachments/assets/4da15d2d-f786-41b4-9359-2a880961b916" />
+<img width="1470" height="956" alt="Screenshot 2026-08-08 at 4 11 07 PM" src="https://github.com/user-attachments/assets/c6bf50bc-688d-4857-b588-4fa3f5fa5c83" />
+<img width="1470" height="956" alt="Screenshot 2026-08-08 at 4 13 24 PM" src="https://github.com/user-attachments/assets/d1cf267c-bc41-4079-81f4-025ecbf2846e" />
