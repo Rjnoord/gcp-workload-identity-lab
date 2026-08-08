@@ -1,0 +1,27 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate
+
+
+# Terraform Plans
+*.tfplan
+
+# Variable Files
+*.tfvars
+*.auto.tfvars
+
+# Crash Logs
+crash.log
+
+# Sensitive Files
+*.pem
+*.key
+*.json
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
