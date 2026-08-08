@@ -1,0 +1,35 @@
+name: Deploy to GCP
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write # required for requesting the OIDC JWT
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          project_id: project-0e4c08f0-edf8-4b23-acf
+          workload_identity_provider: projects/505903692673/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions-provider
+          service_account: github-deployer@project-0e4c08f0-edf8-4b23-acf.iam.gserviceaccount.com
+
+      - name: Set up Cloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Verify authentication
+        run: gcloud auth list
+
+      # Add your deployment steps here, e.g.:
+      # - name: Deploy to Cloud Run
+      #   run: gcloud run deploy my-service --image=... --region=us-central1
