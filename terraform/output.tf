@@ -1,5 +1,5 @@
 output "service_account_email" {
-  value = google_service_account.github.email
+  value = google_service_account.github_runner.email
 
 }
 

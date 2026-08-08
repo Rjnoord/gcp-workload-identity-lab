@@ -12,4 +12,5 @@ variable "region" {
 variable "github_repository" {
   description = "The GitHub repository for which to create the Workload Identity Pool."
   type        = string
+  default     = "rjnoord/gcp-workload-identity-lab"
 }
