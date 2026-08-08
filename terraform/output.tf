@@ -3,6 +3,11 @@ output "service_account_email" {
 
 }
 
+output "deployer_service_account_email" {
+  value = google_service_account.github_deployer.email
+
+}
+
 output "workload_identity_pool_id" {
   value = google_iam_workload_identity_pool.github-pool.workload_identity_pool_id
 

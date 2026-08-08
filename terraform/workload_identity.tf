@@ -25,6 +25,6 @@ resource "google_iam_workload_identity_pool_provider" "github-provider" {
     "attribute.actor"      = "assertion.actor"
   }
 
-  attribute_condition = "attribute.repository"
+  attribute_condition = "assertion.repository == \"${var.github_repository}\""
 
 }
